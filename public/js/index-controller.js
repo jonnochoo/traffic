@@ -12,7 +12,7 @@ function Controller($http) {
           description: item.description,
           location: item.location,
           timestamp: moment(item.timestamp).fromNow(),
-          diff: moment().diff(moment(item.timestamp))
+          diff: moment().diff(moment(item.timestamp), 'minute')
         }
       });
     });

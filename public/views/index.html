@@ -1,5 +1,8 @@
 <h2>Live Traffic Updates <span class="badge">{{vm.results.length}}</span></h2>
-<div class="panel panel-success" ng-repeat="result in vm.results">
+
+<div class="panel"
+  ng-class="result.diff > 60 ? 'panel-success' : 'panel-danger'"
+  ng-repeat="result in vm.results">
   <div class="panel-heading">
     <span class="glyphicon glyphicon-alert"></span> {{result.location}} ({{result.timestamp}})
   </div>
