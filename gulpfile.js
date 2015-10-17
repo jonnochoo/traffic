@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var babel = require('gulp-babel');
 var watch = require('gulp-watch');
 var nodemon = require('gulp-nodemon')
-gulp.task('dev', ['node', 'watch'], function () {
+
+gulp.task('default', ['node', 'watch'], function () {
 
 });
 
