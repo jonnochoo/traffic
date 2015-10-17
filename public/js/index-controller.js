@@ -11,7 +11,8 @@ function Controller($http) {
         return {
           description: item.description,
           location: item.location,
-          timestamp: moment(item.timestamp).fromNow()
+          timestamp: moment(item.timestamp).fromNow(),
+          diff: moment().diff(moment(item.timestamp))
         }
       });
     });
