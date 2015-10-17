@@ -1,20 +1,13 @@
 angular.module('app').controller('IndexController', Controller);
 
-Controller.$inject = ['$http'];
+Controller.$inject = ['$http', 'trafficService'];
 
-function Controller($http) {
+function Controller($http, trafficService) {
   var vm = this;
 
-  (function constructor(){
-    $http.get('api').then(function(result) {
-      vm.results = _.map(result.data, function(item) {
-        return {
-          description: item.description,
-          location: item.location,
-          timestamp: moment(item.timestamp).fromNow(),
-          diff: moment().diff(moment(item.timestamp), 'minute')
-        }
-      });
+  (function constructor() {
+    trafficService.getAlerts().then(function(result) {
+      vm.results = result;
     });
   })();
 }
