@@ -1,0 +1,9 @@
+<h2>Live Traffic Updates <span class="badge">{{vm.results.length}}</span></h2>
+<div class="panel panel-success" ng-repeat="result in vm.results">
+  <div class="panel-heading">
+    <span class="glyphicon glyphicon-alert"></span> {{result.location}} ({{result.timestamp}})
+  </div>
+  <div class="panel-body">
+    {{result.description}}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+html(ng-app="app")
+  head
+    title Express Starter Kit
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width', initial-scale='1.0')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/app.css')
+    link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/images/favicon.ico', type='image/x-icon')    
+  
+  body
+    .container
+      block content
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js')
+    script(src='/dist/js/app.js')
+    script(src='/dist/js/index-controller.js')
+    block scripts    
