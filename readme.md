@@ -1,6 +1,8 @@
 Express Starter Kit
 ===================
 
+![node-dependencies](https://david-dm.org/jonnochoo/traffic.svg)
+
 A Express.js starter kit.
 
 Node Packages
