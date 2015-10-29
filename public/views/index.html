@@ -1,7 +1,8 @@
 <h2>Live Traffic Updates <button class="btn btn-default"><span ng-click="vm.reload()" class="badge">{{vm.results.length}}</span></button></h2>
 
-<div ng-show="vm.isLoading">
-  Loading...
+<div class="loader" ng-show="vm.isLoading">
+  <div class="three-quarters-loader"></div>
+  <div>Loading</div>
 </div>
 <div class="panel"
   ng-hide="vm.isLoading"
