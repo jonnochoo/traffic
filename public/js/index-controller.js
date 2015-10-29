@@ -4,6 +4,7 @@ Controller.$inject = ['$http', '$interval', 'trafficService'];
 
 function Controller($http, $interval, trafficService) {
   var vm = this;
+  vm.results = [];
   vm.reload = reload;
   vm.isLoading = false;
 
