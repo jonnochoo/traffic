@@ -1,6 +1,10 @@
 <h2>Live Traffic Updates <button class="btn btn-default"><span ng-click="vm.reload()" class="badge">{{vm.results.length}}</span></button></h2>
 
+<div ng-show="vm.isLoading">
+  Loading...
+</div>
 <div class="panel"
+  ng-hide="vm.isLoading"
   ng-class="result.diff > 60 ? 'panel-success' : 'panel-danger'"
   ng-repeat="result in vm.results">
   <div class="panel-heading">
