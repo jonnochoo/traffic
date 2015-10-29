@@ -10,6 +10,6 @@ router.get('/api', function(req, res) {
   traffic.getTweets(function(err, results) {
     return res.json(results);
   });
-})
+});
 
 module.exports = router;
