@@ -1,4 +1,4 @@
-<h2>Live Traffic Updates <span class="badge">{{vm.results.length}}</span></h2>
+<h2>Live Traffic Updates <button class="btn btn-default"><span ng-click="vm.reload()" class="badge">{{vm.results.length}}</span></button></h2>
 
 <div class="panel"
   ng-class="result.diff > 60 ? 'panel-success' : 'panel-danger'"
