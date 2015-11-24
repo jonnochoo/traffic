@@ -6,7 +6,7 @@
 </div>
 <div class="panel"
   ng-hide="vm.isLoading"
-  ng-class="result.diff > 60 ? 'panel-success' : 'panel-danger'"
+  ng-class="result.diff > 60 ? 'panel-default' : 'panel-info'"
   ng-repeat="result in vm.results">
   <div class="panel-heading">
     <span class="glyphicon glyphicon-alert"></span> {{result.location}} ({{result.timestamp}})

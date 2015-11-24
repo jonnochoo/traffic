@@ -1,7 +1,11 @@
 body {
-  font-family: 'Open Sans', Verdana;
+  font-family: 'Raleway', Verdana;
 }
 .loader {
   margin-top: 20px;
   text-align: center;
+}
+
+.panel-default {
+  color: #999;
 }
